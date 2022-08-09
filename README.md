@@ -16,3 +16,7 @@ Functions:
 - Provides a dictation function. Separating each number with a space. If the number is correct, the corresponding background turns to green. If error turns red.
 
 Check video demo [here](https://www.youtube.com/watch?v=tUFpgp3q3RQ).
+
+# Attention external dependency is needed:
+you must download jacob-1.19-x64 at https://github.com/freemansoft/jacob-project/releases, and add the file into your JDK's bin dictionary.
+I've added this file into src/externalFile.

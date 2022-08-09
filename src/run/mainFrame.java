@@ -7,7 +7,7 @@ import javax.swing.*;
 public class mainFrame {
     private static int widthOfPanel1 = 200;
     private static int heightOfPanel1 = 495;
-    private static int widthOfPanel2 = 1600;
+    private static int widthOfPanel2 = 600;
     private static int heightOfPanel2 = 165;
     private static int gap = 15;
 //    private double rateHor = 0.3;
