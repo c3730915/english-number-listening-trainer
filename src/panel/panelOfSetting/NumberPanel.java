@@ -18,11 +18,11 @@ public class NumberPanel extends JPanel {
     public JTextField tfDecimal = new JTextField("0");
 
     public NumberPanel() {
-        MigLayout migLayoutNumber = new MigLayout("", "[128!,grow]5[50!]10[40!,grow]5[30!]7[45!," +
-                "grow]5[30!,grow]", "[]");
+        MigLayout migLayoutNumber = new MigLayout("", "[228!,grow]5[80!]10[40!,grow]5[130!]7[145!," +
+                "grow]5[130!,grow]", "[]");
         this.setLayout(migLayoutNumber);
 
-        bGenerateNum.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+        bGenerateNum.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 
         this.add(bGenerateNum, "growx");
         this.add(rbFixed, "growx");

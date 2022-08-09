@@ -17,9 +17,9 @@ public class DatePanel extends JPanel {
     JCheckBox checkBox = new JCheckBox("Time", true);
 
     public DatePanel() {
-        bDate.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+        bDate.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 
-        MigLayout migLayout = new MigLayout("", "[128!,grow]10[40!,grow]5[40!]7[20!,grow]5[40!," +
+        MigLayout migLayout = new MigLayout("", "[188!,grow]10[40!,grow]5[40!]7[20!,grow]5[40!," +
                 "grow]15[60!]", "[]");
         this.setLayout(migLayout);
 

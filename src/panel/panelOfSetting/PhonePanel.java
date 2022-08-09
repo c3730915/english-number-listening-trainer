@@ -18,7 +18,7 @@ public class PhonePanel extends JPanel {
     public ButtonGroup bg;
 
     public PhonePanel() {
-        bPhoneNum.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+        bPhoneNum.setFont(new Font("Times New Roman", Font.PLAIN, 18));
         bg = new ButtonGroup();
         bg.add(rb1);
         bg.add(rb2);
@@ -26,7 +26,7 @@ public class PhonePanel extends JPanel {
         bg.add(rb4);
         rb3.setSelected(true);
 
-        MigLayout migLayoutPhone = new MigLayout("", "[128!,grow]10[40!,grow]5[30!]5[30!," +
+        MigLayout migLayoutPhone = new MigLayout("", "[188!,grow]10[40!,grow]5[30!]5[30!," +
                 "grow]5[30!,grow]5[30!,grow]", "[]");
         this.setLayout(migLayoutPhone);
 

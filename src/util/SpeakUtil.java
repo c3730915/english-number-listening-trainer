@@ -7,8 +7,9 @@ import com.jacob.com.Variant;
 import listener.ButtonListener;
 
 public class SpeakUtil {
+    private static final Integer rateNum = 0;
     private static boolean pausable = false;
-    static ActiveXComponent sap = new ActiveXComponent("Sapi.SpVoice");
+        static ActiveXComponent sap = new ActiveXComponent("Sapi.SpVoice");
     static Dispatch sapo = sap.getObject();
 
     public static void speak(String[] strings) {
@@ -23,15 +24,9 @@ public class SpeakUtil {
 //            sapo = sap.getObject();
 
             sap.setProperty("Volume", new Variant(100));
-            sap.setProperty("Rate", new Variant(0));
+            sap.setProperty("Rate", new Variant(rateNum));
             sap.setProperty("SynchronousSpeakTimeout", new Variant(1000000));
 
-//            Dispatch.call(sapo, "Speak", new Variant("<speak version=\"1.0\"\n" +
-//                    "xmlns=\"http://www.w3.org/2001/10/synthesis\"\n" +
-//                    "xml:lang=\"en-US\">\n" +
-//                    "<voice xml:lang=\"en-US\" gender=\"female\">\n" +
-//                    string + "</voice>\n" +
-//                    "</speak>"));
             int i = 0;
             for (String str : strings) {
                 System.out.println("Is canceled?" + ButtonListener.sw.isCancelled());
@@ -62,7 +57,7 @@ public class SpeakUtil {
         try {
 
             sap.setProperty("Volume", new Variant(100));
-            sap.setProperty("Rate", new Variant(0));
+            sap.setProperty("Rate", new Variant(rateNum));
             sap.setProperty("SynchronousSpeakTimeout", new Variant(1000000));
 
             Dispatch.call(sapo, "Speak", new Variant("<speak version=\"1.0\"\n" +
