@@ -7,7 +7,7 @@ import com.jacob.com.Variant;
 import listener.ButtonListener;
 
 public class SpeakUtil {
-    private static final Integer rateNum = 0;
+    private static final int rateNum = -1;
     private static boolean pausable = false;
         static ActiveXComponent sap = new ActiveXComponent("Sapi.SpVoice");
     static Dispatch sapo = sap.getObject();
