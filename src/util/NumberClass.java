@@ -186,21 +186,21 @@ public class NumberClass {
     private static String getDirection(int num) {
         switch(num) {
             case 1:
-                return "North";
+                return "north";
             case 2:
-                return "Northwest";
+                return "northwest";
             case 3:
-                return "West";
+                return "west";
             case 4:
-                return "Southwest";
+                return "southwest";
             case 5:
-                return "South";
+                return "south";
             case 6:
-                return "Southeast";
+                return "southeast";
             case 7:
-                return "East";
+                return "east";
             case 8:
-                return "Northeast";
+                return "northeast";
         }
         return null;
     }
